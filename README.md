@@ -1,2 +1,2 @@
-# RockPaperScissor
-This Is My Python Project Rock Paper Scissor Game
+# Project
+This Is My Python Project 
