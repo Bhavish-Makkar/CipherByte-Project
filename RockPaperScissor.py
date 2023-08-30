@@ -15,12 +15,13 @@ print("""    Rules For The Game
       """)
 print()
 #Choices
-print(""" Choices Are : 
+while(True):
+ print(""" Choices Are : 
 1.Rock
 2.Paper
 3.Scissor""")
 #Game Loop
-while(True):
+
    #Get user choice
  user=int(input("enter your choice from 1-3 : "))
  print()
