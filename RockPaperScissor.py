@@ -43,17 +43,17 @@ while(True):
 
  if ((user_choice=="Paper" and computer_choice=="Rock") or (user_choice=="Rock" and computer_choice=="Paper")):
     print("Paper Wins")
-    result="Paper"
+    Result="Paper"
  elif ((user_choice=="Rock" and computer_choice=="Scissor") or (user_choice=="Scissor" and computer_choice=="Rock")):
     print("Rock Wins")
-    result="Rock"
+    Result="Rock"
  elif(user_choice==computer_choice):
     print("Its A Tie")
     Result="Tie"
  else:
     print("Scissor Wins")
-    result="Scissor"
- if result==user_choice :
+    Result="Scissor"
+ if Result==user_choice :
     print("User Wins")
     user_score=user_score+1;
  elif user_choice==computer_choice :
