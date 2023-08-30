@@ -1,23 +1,30 @@
 import random
-
+#Welcome message
 print ("Welcome To Rock Paper Scissor Game")
+#Intialisation
 user_score=0;
 computer_score=0;
 ties=0;
+#user name
 name=input("enter your name here : ")
+#Rules
 print("""    Rules For The Game
       1. Paper vs Rock --->Paper
       2. Paper vs Scissor --->Scissor
       3. Scissor vs Rock --->Rock
       """)
 print()
+#Choices
 print(""" Choices Are : 
 1.Rock
 2.Paper
 3.Scissor""")
+#Game Loop
 while(True):
+   #Get user choice
  user=int(input("enter your choice from 1-3 : "))
  print()
+ #check if the choice is valid or not
  while user>3 or user<1:
     user=int(input("enter valid input "))
     
@@ -30,7 +37,7 @@ while(True):
  print("The user choice is ",user_choice)
  print("Now it is Computer Turn ")
  computer= random.randint(1,3)
-
+#computer choice
  if computer==1:
     computer_choice="Rock";
  elif computer==2:
@@ -40,7 +47,7 @@ while(True):
     
     
  print("the computer's choice is ",computer_choice)
-
+#Who is the winner
  if ((user_choice=="Paper" and computer_choice=="Rock") or (user_choice=="Rock" and computer_choice=="Paper")):
     print("Paper Wins")
     Result="Paper"
@@ -62,7 +69,7 @@ while(True):
     print("Computer Wins")
     computer_score=computer_score+1;
     
-    
+    #Score
  print("Scores Are")
  print(name,"score is ",user_score)
  print("computer score is ",computer_score)
